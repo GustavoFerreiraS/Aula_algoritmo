@@ -1,0 +1,48 @@
+programa {
+  funcao inicio() {
+     inteiro notap1, notap2, media, notaexame, mediafinal
+
+        escreva("Digite a nota da P1: ")
+        leia(notap1)
+
+        escreva("Digite a nota da P2: ")
+        leia(notap2)
+
+        media = (notap1 + notap2) / 2
+
+        escreva("\n Média parcial é ", media, "\n")
+
+        se (media >= 7)
+        {
+            escreva("Aluno APROVADO!\n")
+        } senao {
+                  }se (media < 3)
+                  {
+                      escreva("Aluno REPROVADO!\n")
+                  } senao{
+
+
+        escreva("Aluno em EXAME FINAL.\n")
+        escreva("Digite a nota do Exame Final: ")
+        leia(notaexame)
+
+            mediafinal = (media + notaexame) / 2
+
+            escreva("Média final: ", mediafinal, "\n")
+
+            se (mediaFinal >= 5)
+            {
+                escreva("Aluno APROVADO após o Exame Final!\n")
+            } senao
+            {
+                escreva("Aluno REPROVADO após o Exame Final.\n")
+            }
+        }
+    
+
+    
+  }
+}
+
+
+

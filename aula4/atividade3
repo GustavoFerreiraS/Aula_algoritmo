@@ -1,0 +1,77 @@
+programa {
+  funcao inicio() {
+   
+   
+        inteiro pontuacao = 0
+        cadeia resposta
+
+        escreva("Pergunta 1: Quem é o atual presidente do Brasil\n")
+        escreva("a) Dilma\n")
+        escreva("b) Bolsonaro\n")
+        escreva("c) Temer\n")
+        escreva("d) Lula\n")
+        escreva("Sua resposta: ")
+        leia(resposta)
+
+        se(resposta == 'd' ou resposta =='D'){
+          escreva("Reposta certa!\n")
+          pontuacao = pontuacao + 1
+        }senao{
+          escreva("Resposta incorreta. Resposta correta é D)Lula \n \n")
+        }
+        
+
+        escreva("Pergunta 2: Qual a capital do Brasil?\n")
+        escreva("a) Rio de Janeiro\n")
+        escreva("b) São Paulo\n")
+        escreva("c) Brasília\n")
+        escreva("d) Salvador\n")
+        escreva("Sua resposta: ")
+        leia(resposta)
+
+        se (resposta == 'c' ou resposta == 'C')
+        {
+            escreva("Resposta correta!\n\n")
+            pontuacao = pontuacao + 1
+        } senao
+        {
+            escreva("Resposta incorreta. A resposta correta é: c) Brasília\n\n")
+        }
+
+        escreva("Pergunta 3: Qual é a maior torcida de futebol do Brasil\n")
+        escreva("a) Flamengo\n")
+        escreva("b) Vasco\n")
+        escreva("c) Corinthians \n")
+        escreva("d) Palmairas\n")
+        escreva("Sua resposta: ")
+        leia(resposta)
+
+        se (resposta == 'a' ou resposta == 'A')
+        {
+            escreva("Resposta correta!\n\n")
+            pontuacao = pontuacao + 1
+        } senao
+        {
+            escreva("Resposta incorreta. A resposta correta é: a) Flamengo\n\n")
+        }
+
+
+        escreva("Resultado Final\n")
+
+        escreva("Parabéns! Sua pontuação total foi: ", pontuacao, " pontos.\n\n")
+
+ 
+        se (pontuacao <= 1)
+        {
+            escreva("Classificação: Precisa estudar mais!\n")
+        } senao se (pontuacao <= 2)
+        {
+            escreva("Classificação: Bom!\n")
+        } senao
+        {
+            escreva("Classificação: Excelente!\n")
+        }
+
+
+  }
+}

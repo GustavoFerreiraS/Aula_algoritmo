@@ -1,0 +1,49 @@
+programa
+{
+    funcao inicio()
+    {
+        cadeia candidato1, candidato2, candidato3
+        inteiro voto_candidato1, voto_candidato2, voto_candidato3, brancos_nulos, total_votos, total_percentual1, total_percentual2, total_percentual3
+
+        escreva("Qual é o nome do primeiro candidato?")
+        leia(candidato1)
+        escreva("Qual é o nome do segundo candidato?")
+        leia(candidato2)
+        escreva("Qual é o nome do terceiro candidato?")
+        leia(candidato3)
+
+        escreva("Quantos votos recebeu o candidato ", candidato1, "?")
+        leia(voto_candidato1)
+        escreva("Quantos votos recebeu o candidato ", candidato2, "?")
+        leia(voto_candidato2)
+        escreva("Quantos votos recebeu o candidato ", candidato3, "?")
+        leia(voto_candidato3)
+        escreva("Quantos votos foram Brancos e nulos?")
+        leia(brancos_nulos)
+
+        escreva("O candidato ", candidato1, " recebeu ", voto_candidato1, " votos \n")
+        escreva("O candidato ", candidato2, " recebeu ", voto_candidato2, " votos \n")
+        escreva("O candidato ", candidato3, " recebeu ", voto_candidato3, " votos \n")
+        escreva("A quantidade de votos Brancos e nulos foram ", brancos_nulos, "\n")
+
+        total_votos = voto_candidato1 + voto_candidato2 + voto_candidato3 + brancos_nulos
+
+        total_percentual1 = (voto_candidato1 * 100) / total_votos
+        total_percentual2 = (voto_candidato2 * 100) / total_votos
+        total_percentual3 = (voto_candidato3 * 100) / total_votos
+
+        escreva("O candidato ", candidato1, " teve um percentual de ", total_percentual1, "\n")
+        escreva("O candidato ", candidato2, " teve um percentual de ", total_percentual2, "\n")
+        escreva("O candidato ", candidato3, " teve um percentual de ", total_percentual3, "\n")
+
+        se((total_percentual1 > total_percentual2) e (total_percentual1 > total_percentual3)){
+            escreva("O vencedor da eleição é ", candidato1)
+        } senao {
+            se((total_percentual3 > total_percentual1) e (total_percentual3 > total_percentual2)){
+                escreva("O vencedor da eleição é ", candidato3)
+            } senao {
+                escreva("O vencedor da eleição é ", candidato2)
+            }
+        }
+    }
+}

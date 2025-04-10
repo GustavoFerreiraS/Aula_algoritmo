@@ -1,0 +1,45 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	
+	cadeia candidato1, candidato2
+	inteiro voto_candidato1, voto_candidato2, brancos_nulos, total_votos, total_percetual1,total_percetual2
+	
+	
+	escreva("Qual é o nome do primeiro candidato?")
+		leia(candidato1)
+	escreva("Qual é nome do segundo candidato?")
+		leia(candidato2)
+	escreva("Quantos votos recebeu o canditato ", candidato1, "?")
+		leia(voto_candidato1)
+	escreva("Quantos votos recebeu o caditato ", candidato2, "?")
+		leia(voto_candidato2)
+	escreva("Quantos votos foram Brancos e nulos?")
+		leia(brancos_nulos)
+	escreva("o candidato ", candidato1, " recebeu ", voto_candidato1, " votos \n")
+	escreva("o candidato ", candidato2, " recebeu ", voto_candidato2, " votos \n")
+	escreva("A quantidade de votos Brancos e nulos foram ", brancos_nulos, "\n")
+
+
+	total_votos = voto_candidato1 + voto_candidato2 
+
+	 total_percetual1 = ( voto_candidato1  * 100) / total_votos
+	 total_percetual2 = ( voto_candidato2  * 100) / total_votos
+
+	escreva ("o candidato ", candidato1, " teve um percetual de ", total_percetual1,"\n")
+	escreva ("o candidato ", candidato2, " teve um percetual de ", total_percetual2,"\n")
+
+	se(total_percetual1>total_percetual2){
+			escreva("o vencedor da eleição é ", candidato1)
+		}senao{
+			escreva("o vencedor da eleição é 	", candidato2)
+		}
+
+	
+
+
+		
+	}
+}
