@@ -1,0 +1,33 @@
+programa
+{
+    funcao inicio()
+    {
+        cadeia personagem, local, objeto, criatura, missao, obstaculo, licao_final
+
+        escreva ("Qual nome do seu personagem? ")
+        leia(personagem)
+
+        escreva ("Qual nome do seu local? ")
+        leia(local)
+
+        escreva ("Qual nome do objeto? ")
+        leia(objeto)
+
+        escreva ("Qual nome da criatura? ")
+        leia(criatura)
+
+        escreva ("Qual nome da missao? ")
+        leia(missao)
+
+        escreva ("Qual nome da obstaculo? ")
+        leia(obstaculo)
+
+        escreva ("Qual nome da licao_final? ")
+        leia(licao_final)
+
+        escreva(personagem, " vivia uma vida tranquila em ", local, " quando tropeçou em um ", objeto, ". Rapidamente, pegou o ", objeto, " e, de uma fumaça misteriosa, um ", criatura, " apareceu e disse \n")
+        escreva(" Você é o escolhido, o mundo depende de você! Agora, você precisa ", missao, " antes que seja tarde demais! \n")
+        escreva(" Sem hesitar, ", personagem, " partiu em sua jornada, onde precisou enfrentar o terrível ", obstaculo, ". No final, conseguiu cumprir sua missão, e percebeu que ", licao_final, ".")
+        escreva("Assim, voltou para ", local, " mas não era mais o mesmo. Sua vida havia mudado para sempre.")
+    }
+}

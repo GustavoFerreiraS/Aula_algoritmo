@@ -1,0 +1,23 @@
+programa
+{
+    funcao inicio()
+    {
+        cadeia jogador1, jogador2
+        inteiro numero_jogador1, numero_jogador2
+        inteiro calculo
+
+        escreva("Qual é o nome do primeiro jogador que escolheu par? ")
+        leia(jogador1)
+        escreva("Qual é o nome do segundo jogador que escolheu impar? ")
+        leia(jogador2)
+
+        escreva("Qual número o primeiro jogador escolheu? ")
+        leia(numero_jogador1)
+        escreva("Qual número o segundo jogador escolheu? ")
+        leia(numero_jogador2)
+
+        calculo = numero_jogador1 + numero_jogador2
+
+        se (calculo % 2 == 0) {
+            escreva(jogador1, " é o vencedor ")
+        }
