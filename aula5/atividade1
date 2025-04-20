@@ -1,0 +1,37 @@
+
+programa {
+  funcao inicio() {
+      
+    cadeia jogador1, jogador2, escolha_jogador1, escolha_jogador2, pedra, papel, tesoura
+
+      escreva("Qual é o nome do primeiro jogador? ")
+      leia(jogador1)
+
+      escreva("Qual é o nome do segundo jogador? ")
+      leia(jogador2)
+
+
+      escreva(jogador1, " escolha entre pedra, papel ou tesoura? ")
+      leia(escolha_jogador1)
+
+      escreva(jogador2, " escolha entre pedra, papel ou tesoura? ")
+      leia(escolha_jogador2)
+
+      se (escolha_jogador1 == escolha_jogador2){
+      	escreva("Empate")
+    
+
+      }senao se(escolha_jogador1 == "pedra" e escolha_jogador2 == "tesoura"){
+      	escreva(jogador1, " venceu")
+      }senao se (escolha_jogador1 == "tesoura" e escolha_jogador2 == "papel"){
+      	escreva(jogador1, " venceu")
+      }senao se (escolha_jogador1 == "papel" e escolha_jogador2 == "pedra"){
+      	escreva(jogador1, " venceu")
+      }senao{
+      	escreva(jogador2, " venceu")
+      	}
+      	
+  
+     
+  }
+}
